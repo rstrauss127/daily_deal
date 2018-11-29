@@ -2,4 +2,4 @@
 
 require './lib/daily_deal'
 
-Daily::CLI.new.call
+DailyDeal::CLI.new.call
