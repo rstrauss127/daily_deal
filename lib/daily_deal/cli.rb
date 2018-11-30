@@ -9,10 +9,8 @@ class DailyDeal::CLI
 
   def list_deals
     puts "Today's Daily Deals"
-    puts <<-DOC.gsub /^\s*/, ''
-      1. PCH Digital Pulse Massager - $27 - Still available!
-      2. Lenovo ThinkPad 11E 11.6 - $199.99 - Still available!
-    DOC
+
+    @deals = DailyDeal::Deal.today
   end
 
   def menu
